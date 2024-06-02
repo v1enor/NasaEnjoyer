@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "loadEnv",
+      "type": "shell",
+      "command": "${env:GOPATH}/bin/godotenv -f ${workspaceFolder}/.env go run app/main.go",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+# Config file for Air
+
+[build]
+  bin = "app-bin"
+  cmd = "go build -o ./app-bin ./app/main.go"
+  exclude_dirs = ["tmp", "bin", "scripts"]
+  exclude_files = ["*_test.go"]
+
+[watch]
+  includes = ["**/*.go", "**/*.toml"]
+  exclude_dirs = ["tmp", "bin", "scripts"]
